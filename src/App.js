@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import './components/Livro.css'
+import Menu from "./components/Menu";
+import { Routes, Route } from "react-router-dom";
+import TelaInputLivro from "./components/TelaInputLivro";
+import TelaListLivro from "./components/TelaCardLivro";
+import Carroussel from "./components/Carroussel";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Menu />
+      {/* <Carroussel /> */}
+      <Routes>
+        <Route path="/" element={<TelaListLivro />} />
+        <Route path="/add" element={<TelaInputLivro />} />
+      </Routes>
+    </>
+    
   );
 }
 
