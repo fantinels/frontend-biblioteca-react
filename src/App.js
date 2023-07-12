@@ -4,7 +4,7 @@ import Menu from "./components/Menu";
 import { Routes, Route } from "react-router-dom";
 import TelaInputLivro from "./components/TelaInputLivro";
 import TelaListLivro from "./components/TelaCardLivro";
-import Carroussel from "./components/Carroussel";
+// import Carroussel from "./components/Carroussel";
 
 
 function App() {
